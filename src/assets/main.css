@@ -1,0 +1,51 @@
+@import './base.css';
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  border-bottom: 1px solid var(--divider);
+  transition: border-color 0.3s;
+  padding-bottom: 2px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    border-color: var(--white);
+  }
+}
+
+/* Blog-style header */
+header {
+  margin-bottom: 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+/* Blog-style main content */
+main {
+  line-height: 1.8;
+}
+
+@media (min-width: 1024px) {
+  #app {
+    padding: 4rem 2rem;
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+  }
+}
